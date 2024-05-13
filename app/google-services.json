@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "759862702449",
+    "project_id": "jobmanagementapp-87360",
+    "storage_bucket": "jobmanagementapp-87360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759862702449:android:08b0873951b797225ac6d0",
+        "android_client_info": {
+          "package_name": "com.example.jobmanagementapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3HC15eQuK72dvZN_-MJkENZMDWtDalhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
