@@ -34,7 +34,7 @@ import com.example.jobmanagementapp.navigation.ROUTE_CHECK_OUT
 fun HomeScreen(navController: NavController) {
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
-            painter = painterResource(id = R.drawable.department),
+            painter = painterResource(id = R.drawable.login),
             contentDescription = "Home Page",
             contentScale = ContentScale.FillBounds,
             modifier = Modifier.matchParentSize()
@@ -63,12 +63,12 @@ fun HomeScreen(navController: NavController) {
         Spacer(modifier = Modifier.height(50.dp))
         Button(onClick = { navController.navigate(ROUTE_CHECK_IN)
         }, modifier = Modifier.fillMaxWidth()) {
-            Text(text = "SIGN IN")
+            Text(text = "CHECK IN")
         }
         Spacer(modifier = Modifier.height(50.dp))
         Button(onClick = { navController.navigate(ROUTE_CHECK_OUT)
         }, modifier = Modifier.fillMaxWidth()) {
-            Text(text = "SIGN OUT")
+            Text(text = "CHECK OUT")
         }
     }
 

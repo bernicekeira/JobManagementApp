@@ -1,4 +1,4 @@
-package com.example.jobmanagementapp.ui.theme.screens.Employee
+package com.example.jobmanagementapp.ui.theme.screens.employee
 
 import android.widget.Toast
 import androidx.compose.foundation.Image

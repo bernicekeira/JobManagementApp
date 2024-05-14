@@ -41,7 +41,7 @@ import com.example.jobmanagementapp.navigation.ROUTE_REGISTER
 fun LoginScreen(navController: NavController){
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
-            painter = painterResource(id = R.drawable.home),
+            painter = painterResource(id = R.drawable.department),
             contentDescription = "Home Page",
             contentScale = ContentScale.FillBounds,
             modifier = Modifier.matchParentSize())

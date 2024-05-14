@@ -137,7 +137,7 @@ fun SignOutScreen(navController: NavHostController) {
         Spacer(modifier = Modifier.height(15.dp))
         Button(onClick = {navController.navigate(ROUTE_HOME)},
             colors = ButtonDefaults.buttonColors(Color.Gray)){
-            Text(text= "Sign Out")
+            Text(text= "Check Out")
         }
 
         Spacer(modifier = Modifier.height(15.dp))
@@ -145,7 +145,7 @@ fun SignOutScreen(navController: NavHostController) {
             onClick = { navController.navigate(ROUTE_CHECK_OUT) },
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text(text = "Didn't Sign Up? Click to Sign in")
+            Text(text = "Didn't Sign Up? Click to Check in")
 
         }
 

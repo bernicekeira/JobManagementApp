@@ -3,6 +3,7 @@ package com.example.jobmanagementapp.ui.theme.screens.home
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -18,14 +19,19 @@ import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.BottomAppBarDefaults
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.FloatingActionButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -38,6 +44,8 @@ import com.example.jobmanagementapp.navigation.ROUTE_HOME
 import com.example.jobmanagementapp.navigation.ROUTE_LOGIN
 import com.example.jobmanagementapp.navigation.ROUTE_REGISTER
 import com.example.jobmanagementapp.navigation.ROUTE_CHECK_IN
+import com.example.jobmanagementapp.navigation.ROUTE_UPDATE_EMPLOYEE
+import com.example.jobmanagementapp.navigation.ROUTE_VIEW_EMPLOYEE
 
 @Composable
 fun HomeDepartmentsScreen(navController: NavController){
@@ -71,14 +79,14 @@ fun HomeDepartmentsScreen(navController: NavController){
                     IconButton(onClick = { navController.navigate(ROUTE_CHECK_IN) }) {
                         Icon(
                             Icons.Filled.Email,
-                            contentDescription = "Email"
+                            contentDescription = "Localized description"
                         )
 
                     }
                     IconButton(onClick = { navController.navigate(ROUTE_LOGIN) }) {
                         Icon(
                             Icons.Filled.AccountCircle,
-                            contentDescription = "Account"
+                            contentDescription = "Localized description"
                         )
 
                     }
@@ -114,16 +122,31 @@ fun HomeDepartmentsScreen(navController: NavController){
                 val image = painterResource(
                     id = R.drawable.mee
                 )
-                Image(painter = image,
+                Image(
+                    painter = image,
                     contentDescription = null,
                     modifier = Modifier
                         .size(200.dp)
                         .clip(CircleShape),
-                    contentScale = ContentScale.Crop)
+                    contentScale = ContentScale.Crop
+                )
                 Spacer(modifier = Modifier.height(20.dp))
-
             }
-            Column {
+            Spacer(modifier = Modifier.height(8.dp))
+            Row {
+                ElevatedButton(onClick = {navController.navigate(ROUTE_VIEW_EMPLOYEE) })
+                {
+                    Text(text = "VIEW EMPLOYEES")
+                }
+                ElevatedButton(onClick = {navController.navigate(ROUTE_UPDATE_EMPLOYEE) })
+                {
+                    Text(text = "UPDATE EMPLOYEES")
+                }
+            }
+            Button(onClick = {navController.navigate(ROUTE_ADD_EMPLOYEE)},
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.buttonColors(Color.Black)) {
+                Text(text = "Enter your details", color = Color.Green)
 
             }
         }

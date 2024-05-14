@@ -133,14 +133,14 @@ fun CheckInScreen(navController: NavHostController) {
         Spacer(modifier = Modifier.height(15.dp))
         Button(onClick = { navController.navigate(ROUTE_HOME)},
             colors = ButtonDefaults.buttonColors(Color.Gray)){
-            Text(text= "Sign in")
+            Text(text= "Check in")
         }
         Spacer(modifier = Modifier.height(15.dp))
         Button(
             onClick = { navController.navigate(ROUTE_CHECK_OUT) },
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text(text = "Already Signed Up? Click to Sign Out")
+            Text(text = "Already Signed Up? Click to Check Out")
 
         }
         
