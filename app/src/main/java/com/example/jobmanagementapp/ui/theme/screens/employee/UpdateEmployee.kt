@@ -46,7 +46,7 @@ fun UpdateEmployeeScreen(navController: NavHostController, id:String) {
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
             painter = painterResource(id = R.drawable.home),
-            contentDescription = "Home Page",
+            contentDescription = "Update Page",
             contentScale = ContentScale.FillBounds,
             modifier = Modifier.matchParentSize())
     }

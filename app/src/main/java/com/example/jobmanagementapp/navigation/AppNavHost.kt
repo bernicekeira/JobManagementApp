@@ -13,7 +13,7 @@ import com.example.jobmanagementapp.ui.theme.screens.home.HomeDepartmentsScreen
 import com.example.jobmanagementapp.ui.theme.screens.home.HomeScreen
 import com.example.jobmanagementapp.ui.theme.screens.login.LoginScreen
 import com.example.jobmanagementapp.ui.theme.screens.register.RegisterScreen
-import com.example.jobmanagementapp.ui.theme.screens.checkout.SignOutScreen
+import com.example.jobmanagementapp.ui.theme.screens.checkout.CheckOutScreen
 import com.example.jobmanagementapp.ui.theme.screens.employee.ViewUploadScreen
 import com.example.jobmanagementapp.ui.theme.screens.welcome.WelcomeScreen
 
@@ -39,7 +39,7 @@ fun AppNavHost(modifier: Modifier=Modifier,
             CheckInScreen(navController)
         }
         composable(ROUTE_CHECK_OUT){
-            SignOutScreen(navController)
+            CheckOutScreen(navController)
         }
         composable(ROUTE_ADD_EMPLOYEE){
             AddEmployeeScreen(navController)

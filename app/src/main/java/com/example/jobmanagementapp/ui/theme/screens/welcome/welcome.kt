@@ -42,8 +42,8 @@ import com.example.jobmanagementapp.navigation.ROUTE_REGISTER
 fun WelcomeScreen(navController: NavController){
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
-            painter = painterResource(id = R.drawable.com),
-            contentDescription = "Home Page",
+            painter = painterResource(id = R.drawable.welcome),
+            contentDescription = "Welcome Page",
             contentScale = ContentScale.FillBounds,
             modifier = Modifier.matchParentSize())
     }
@@ -52,7 +52,7 @@ fun WelcomeScreen(navController: NavController){
         Text(text = "Welcome",
             fontSize = 40.sp,
             fontWeight = FontWeight(900),
-            color = Color.Blue,
+            color = Color.Black,
             fontFamily = FontFamily.Cursive,
             textDecoration = TextDecoration.Underline
         )
@@ -74,7 +74,7 @@ fun WelcomeScreen(navController: NavController){
             fontWeight = FontWeight(150),
             color = Color.Black
         )
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.weight(0.7f))
         Button(onClick = { navController.navigate(ROUTE_HOME)},
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(Color.Black)) {
@@ -82,7 +82,7 @@ fun WelcomeScreen(navController: NavController){
             Text(text = "Get Started",
                 color = Color.Green)
         }
-        Spacer(modifier = Modifier.weight(0.7f))
+        Spacer(modifier = Modifier.height(20.dp))
         Button(onClick = { navController.navigate(ROUTE_REGISTER)}, 
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(Color.Black)) {
@@ -100,9 +100,9 @@ fun WelcomeScreen(navController: NavController){
                 fontWeight = FontWeight.Bold)
             
         }
-        Spacer(modifier = Modifier.height(10.dp))
+        Spacer(modifier = Modifier.height(3.dp))
         Text(text = "Terms and Conditions Applied",
-            color = Color.Green)
+            color = Color.Black)
 
     }
 }

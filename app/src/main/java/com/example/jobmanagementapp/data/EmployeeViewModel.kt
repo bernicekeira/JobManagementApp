@@ -66,7 +66,7 @@ class EmployeeViewModel(var navController: NavHostController, var context: Conte
         var employeeData = Employee(employeeName, employeeContact, employeeEmail, id)
         var employeeRef = FirebaseDatabase.getInstance().getReference()
             .child("Employee/$id")
-        progress.show()
+//        progress.show()
         employeeRef.setValue(employeeData).addOnCompleteListener {
             progress.dismiss()
             if (it.isSuccessful) {
@@ -77,7 +77,6 @@ class EmployeeViewModel(var navController: NavHostController, var context: Conte
             }
         }
     }
-
     fun viewEmployee(
         employee: MutableState<Employee>,
         employees: SnapshotStateList<Employee>

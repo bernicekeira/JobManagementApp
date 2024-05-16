@@ -42,7 +42,7 @@ fun LoginScreen(navController: NavController){
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
             painter = painterResource(id = R.drawable.department),
-            contentDescription = "Home Page",
+            contentDescription = "Login Page",
             contentScale = ContentScale.FillBounds,
             modifier = Modifier.matchParentSize())
     }

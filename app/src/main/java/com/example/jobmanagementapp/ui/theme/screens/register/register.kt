@@ -42,7 +42,7 @@ fun RegisterScreen(navController: NavController) {
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
             painter = painterResource(id = R.drawable.com),
-            contentDescription = "Home Page",
+            contentDescription = "Register Page",
             contentScale = ContentScale.FillBounds,
             modifier = Modifier.matchParentSize())
     }

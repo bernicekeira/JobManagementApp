@@ -47,7 +47,7 @@ fun ViewUploadScreen(navController:NavHostController) {
             Text(text = "All uploads",
                 fontSize = 30.sp,
                 fontFamily = FontFamily.Cursive,
-                color = Color.Blue)
+                color = Color.White)
 
             Spacer(modifier = Modifier.height(20.dp))
 
